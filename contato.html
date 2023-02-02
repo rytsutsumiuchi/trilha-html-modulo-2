@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínca Veterinária</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="./images/logo.png" alt="Logo do site">
+                <h1>Clínica<br>Veterinária</h1>
+            </div>
+
+            <div class="content contact">
+                <div class="contact-info">
+                    <h2>Contato</h2>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <h4>Fale com a gente</h4>
+                    <form action="">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" size="40" required maxlength="50" pattern="[A-z\s]{3,50}"
+                            title="Preencha seu nome completo."><br>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" size="40" required
+                            pattern="[A-z0-9._%+-]+@[a-z0-9.-]+\.[A-z]{2,}$" title="Preencha um e-mail válido."><br>
+
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject" size="40" required maxlength="50" pattern="[A-z\s]{3,50}"
+                            title="Informe sobre qual assunto deseja tratar."><br>
+
+                        <div class="message">
+                            <label for="messege">Mensagem:</label>
+                            <textarea name="messege" id="messege" cols="40" rows="10" required maxlength="1000"
+                                title="Máximo 1000 caracteres."></textarea><br>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="location">
+                    <p><b>Endereço:</b> Av. Paulista, 500 - Bela Vista<br>São Paulo-SP</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0170654077797!2d-46.650281784544845!3d-23.56783056771741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59becf89e4df%3A0x49adf2faace821b2!2sAv.%20Paulista%2C%20500%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-000!5e0!3m2!1spt-BR!2sbr!4v1675039510333!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+
+            <div class="footer">
+                <div class="info">
+                    Clínica Veterinária<br>
+                    Contato: (11)1234-5678 | Av. Paulista, 500 - Bela Vista, São Paulo-SP
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

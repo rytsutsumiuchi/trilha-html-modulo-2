@@ -5,13 +5,14 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins';
 }
 
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    
 }
 .main {
     display: flex;
@@ -20,19 +21,158 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: #C3E3F7;
     padding: 10px 20px 0px;
+
 }
+.menu ul li {
+    list-style: none;
+    margin: 30px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: larger; 
+}
+.menu a:hover {
+   color: #f1f089;
+}
+
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: #f1f089;
     min-height: 150px;
+    display: flex;
 }
+.header img {
+    margin: auto 20px;  
+}
+.header h1 {
+    margin: auto 5px;
+}
+
 .content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
+    width: 986px;
+    min-height: 467px;  
 }
+.content h2, .content h4 {
+    margin: 10px 20px;
+}
+.content p {
+    margin-left: 20px;
+}
+
+.content.home {
+    display: flex;
+    background: rgb(191,181,169);
+    background: linear-gradient(135deg, rgba(191,181,169,1) 0%, rgba(215,206,198,1) 100%);
+}
+.content.home .home-info {
+    margin: auto 0;
+}
+.content.home .home-info p {
+    text-align: justify;
+}
+.content.home .image { 
+    display: flex;
+}
+.content.home .image img {   
+   width: 400px; 
+   margin: auto 20px;
+}
+
+.content.about {
+    background: rgb(225,223,224);
+    background: linear-gradient(135deg, rgba(225,223,224,1) 0%, rgba(208,208,218,1) 100%);
+    z-index: -1;
+}
+.content.about h2 {
+    margin-bottom: 100px;
+}
+.content.about .image{   
+    display: flex;
+    justify-content: center;
+    background-color: #d8d6dc; 
+}
+.content.about .image .img {
+    width: 700px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;  
+}
+.content.about .mvv {
+    display: grid;
+    grid-template-columns: 296px 296px 296px;
+    column-gap: 30px;
+    margin: 10px 20px;  
+}
+.content.about .mvv p,h4 {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.content.schedule table {
+    
+    border-collapse: collapse;
+    margin-left: 30px;  
+}
+.content.schedule td, th {
+    border: solid 1px;
+    padding: 5px 10px;
+    text-align: center;
+}
+.content.schedule img {  
+    width: 986px; 
+    position: absolute;
+    z-index: -1;
+}
+
+.content.contact {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(191,181,169);
+    background: linear-gradient(135deg, rgba(191,181,169,1) 0%, rgba(215,206,198,1) 100%);
+}
+.content.contact form input,textarea,label{
+    margin: 10px 0;
+}
+.content.contact form .message {
+    display: flex;
+}
+.content.contact form label{
+    text-align: right;
+    display: inline-block;
+    width: 100px;
+}
+.content.contact form textarea {
+    resize: vertical;
+    margin-left: 4px;   
+}
+.content.contact .form-btn {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.content.contact .form-btn button{
+    margin: 0 20px;
+}
+.content.contact .location {   
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 20px;  
+}
+.content.contact .location p {
+    margin-left: 0px;
+}
+
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: #252525;
     min-height: 150px;
+    display: flex;
+}
+.footer .info {
+    color: #fff;
+    font-size: small;
+    margin: auto 20px;
 }
